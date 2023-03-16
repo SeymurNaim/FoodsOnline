@@ -10,61 +10,64 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="FoodsOnline" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="150" height="54"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="FoodsOnline" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="150" height="54"/>
+                <rect key="frame" x="0.0" y="0.0" width="230" height="150"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFf-A5-uN6">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="54"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFf-A5-uN6" customClass="CardView" customModule="FoodsOnline" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="230" height="150"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IfW-J5-pP6">
-                                <rect key="frame" x="8" y="8" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="CsP-GU-v6U"/>
-                                    <constraint firstAttribute="height" constant="40" id="q3v-BN-6ed"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRB-RD-6mF">
-                                <rect key="frame" x="56" y="19.333333333333332" width="86" height="15.666666666666668"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRB-RD-6mF">
+                                <rect key="frame" x="137" y="65" width="85" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IfW-J5-pP6">
+                                <rect key="frame" x="0.0" y="0.0" width="129" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="tKj-IO-8j9"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="IfW-J5-pP6" secondAttribute="bottom" constant="8" id="3BN-O2-N1d"/>
-                            <constraint firstItem="IfW-J5-pP6" firstAttribute="leading" secondItem="iFf-A5-uN6" secondAttribute="leading" constant="8" id="3qx-7a-ibt"/>
-                            <constraint firstAttribute="width" constant="150" id="BG6-eN-hfn"/>
-                            <constraint firstItem="YRB-RD-6mF" firstAttribute="leading" secondItem="IfW-J5-pP6" secondAttribute="trailing" constant="8" id="QtH-rC-RTs"/>
-                            <constraint firstAttribute="trailing" secondItem="YRB-RD-6mF" secondAttribute="trailing" constant="8" id="cDg-dw-qjI"/>
-                            <constraint firstItem="YRB-RD-6mF" firstAttribute="centerY" secondItem="iFf-A5-uN6" secondAttribute="centerY" id="cGu-W1-JTy"/>
-                            <constraint firstItem="IfW-J5-pP6" firstAttribute="top" secondItem="iFf-A5-uN6" secondAttribute="top" constant="8" id="cMR-TC-qSu"/>
+                            <constraint firstAttribute="height" constant="150" id="Q1L-mD-TNp"/>
+                            <constraint firstAttribute="bottom" secondItem="IfW-J5-pP6" secondAttribute="bottom" id="QIn-Li-Ncg"/>
+                            <constraint firstItem="YRB-RD-6mF" firstAttribute="leading" secondItem="IfW-J5-pP6" secondAttribute="trailing" constant="8" id="fE7-0Q-fen"/>
+                            <constraint firstAttribute="width" constant="230" id="fSn-Tn-49V"/>
+                            <constraint firstAttribute="trailing" secondItem="YRB-RD-6mF" secondAttribute="trailing" constant="8" id="o9h-Ev-Ujc"/>
+                            <constraint firstItem="YRB-RD-6mF" firstAttribute="centerY" secondItem="IfW-J5-pP6" secondAttribute="centerY" id="qiA-Lf-WX9"/>
+                            <constraint firstItem="IfW-J5-pP6" firstAttribute="leading" secondItem="iFf-A5-uN6" secondAttribute="leading" id="tSx-Ui-i7w"/>
+                            <constraint firstItem="IfW-J5-pP6" firstAttribute="top" secondItem="iFf-A5-uN6" secondAttribute="top" id="wB1-EL-0iA"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="iFf-A5-uN6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0cg-0B-HnQ"/>
-                <constraint firstAttribute="trailing" secondItem="iFf-A5-uN6" secondAttribute="trailing" id="5NK-dt-Q8a"/>
-                <constraint firstAttribute="bottom" secondItem="iFf-A5-uN6" secondAttribute="bottom" id="9TA-Ag-S7F"/>
-                <constraint firstItem="iFf-A5-uN6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nfC-De-FAI"/>
+                <constraint firstItem="iFf-A5-uN6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7ED-2c-kXx"/>
+                <constraint firstAttribute="trailing" secondItem="iFf-A5-uN6" secondAttribute="trailing" id="ZCC-cg-0y1"/>
+                <constraint firstItem="iFf-A5-uN6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gTk-kX-sbo"/>
+                <constraint firstAttribute="bottom" secondItem="iFf-A5-uN6" secondAttribute="bottom" id="rzl-3j-yHA"/>
             </constraints>
-            <size key="customSize" width="150" height="54"/>
+            <size key="customSize" width="230" height="140"/>
             <connections>
                 <outlet property="categoryImageView" destination="IfW-J5-pP6" id="4Zf-Dv-xk9"/>
                 <outlet property="categoryTitleLbl" destination="YRB-RD-6mF" id="ucs-L2-Jve"/>
             </connections>
-            <point key="canvasLocation" x="80.916030534351137" y="21.126760563380284"/>
+            <point key="canvasLocation" x="140.45801526717557" y="51.408450704225352"/>
         </collectionViewCell>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

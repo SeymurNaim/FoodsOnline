@@ -13,3 +13,10 @@ struct DishCategory {
     let name:  String
     let image: String
 }
+
+
+struct Restaurants {
+    let id: String
+    let name: String
+    let image: String
+}
