@@ -38,7 +38,7 @@ class HomeViewController: UIViewController {
         .init(id: "id3", name: "Special Qovurma", description: "Kalorinizi qoruyun", image: "https://mado.az/uploads/product/89/et-nar-qovurma_1577038290.jpg", calories: 200.5337),
         .init(id: "id4", name: "Santo Mare", description: "Kalorinizi qoruyun", image: "https://www.santomare.com/wp-content/uploads/2018/03/santomare-restaurant2.jpg", calories: 90.9478),
         .init(id: "id5", name: "Şəki Pitisi", description: "Kalorinizi qoruyun", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgkZL6dG0_3I8CyTJBHBOON_HuO7SWxqP16k9UjR89SQ9YavElFvwKl0qSQGhPJCM1Bo&usqp=CAU", calories: 145.9482),
-        .init(id: "id6", name: "İmişli Qovurması", description: "Kalorinizi qoruyun", image: "https://azerbaijan.az/uploads/news-files/melumatlar/medeniyyet/Kulinariya/НоваяПапка/bdc3019683293bb3dbd8ce119225dbf5.jpg", calories: 78.0345),
+        .init(id: "id6", name: "İmişli Qovurması", description: "Kalorinizi qoruyun", image: "https://azerbaijan.az/uploads/news-files/melumatlar/medeniyyet/Kulinariya/НоваяПапка/bdc3019683293bb3dbd8ce119225dbf5.jpg", calories: 78.0345)
    ]
     
     override func viewDidLoad() {
@@ -91,4 +91,20 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 300, height: 120)
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView {
+            let controller = ListDishesViewController.instantiate()
+            controller.category = categories[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
+        } else {
+            let controller = DishDetailViewController.instantiate()
+            let dish = specials[indexPath.row]
+            controller.dish = dish
+            navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+
+
 }

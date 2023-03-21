@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="152" height="78"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fjr-Mn-k5F" customClass="CardView" customModule="FoodsOnline" customModuleProvider="target">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fjr-Mn-k5F" customClass="CardView" customModule="FoodsOnline" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="152" height="78"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5To-4c-C5S">
@@ -43,6 +43,12 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Fjr-Mn-k5F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8Ox-c6-ovg"/>
+                <constraint firstItem="Fjr-Mn-k5F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="F6e-74-qco"/>
+                <constraint firstAttribute="bottom" secondItem="Fjr-Mn-k5F" secondAttribute="bottom" id="gN8-r7-PbB"/>
+                <constraint firstAttribute="trailing" secondItem="Fjr-Mn-k5F" secondAttribute="trailing" id="kGJ-0v-hWA"/>
+            </constraints>
             <size key="customSize" width="152" height="78"/>
             <connections>
                 <outlet property="RestaurantImageView" destination="icH-Bc-4MW" id="wL4-7N-fyN"/>

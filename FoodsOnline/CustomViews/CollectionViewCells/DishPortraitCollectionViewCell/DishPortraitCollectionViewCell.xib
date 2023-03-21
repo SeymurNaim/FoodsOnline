@@ -72,6 +72,11 @@
                 <constraint firstItem="70Y-Jn-oMU" firstAttribute="top" secondItem="VOL-hY-akY" secondAttribute="bottom" constant="2" id="uKg-8G-iCK"/>
             </constraints>
             <size key="customSize" width="187" height="148"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="caloriesLabel" destination="70Y-Jn-oMU" id="bfk-KY-acV"/>
                 <outlet property="descriptionLbl" destination="eK9-gG-ya7" id="gtg-0n-K3Q"/>
