@@ -43,6 +43,15 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        let service = NetworkService()
+//        let request = service.createRequest(route: .temp, method: .post, parameters: ["firsName": "Ilqar", "lastName": "Naim"])
+//        print("The URL is: \(request?.url)")
+//        print("The body: \(request?.httpBody)")
+        
+        specialCollectionView.dataSource = self
+        specialCollectionView.delegate = self
+        
         registerCells()
         
     }
@@ -91,6 +100,20 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 300, height: 120)
     }
+    
+    
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        if collectionView == categoryCollectionView {
+//            let controller = ListDishesViewController.instantiate()
+//            controller.category = categories[indexPath.row]
+//            navigationController?.pushViewController(controller, animated: true)
+//        } else {
+//            let controller = DishDetailViewController.instantiate()
+//            controller.dish = collectionView == categoryCollectionView ? categories[indexPath.row] : specials[indexPath.row]
+//            navigationController?.pushViewController(controller, animated: true)
+//        }
+//    }
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

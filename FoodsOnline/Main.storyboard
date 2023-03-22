@@ -182,7 +182,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t3n-nu-P0H"/>
-                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="co7-ce-iYf" firstAttribute="top" secondItem="t3n-nu-P0H" secondAttribute="top" id="SgM-bI-IeO"/>
                             <constraint firstAttribute="bottom" secondItem="co7-ce-iYf" secondAttribute="bottom" id="ldf-08-jgF"/>
@@ -190,7 +190,14 @@
                             <constraint firstItem="co7-ce-iYf" firstAttribute="trailing" secondItem="t3n-nu-P0H" secondAttribute="trailing" id="yKh-fp-3sr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Food Delivery" id="dtJ-uI-Vkl"/>
+                    <navigationItem key="navigationItem" title="Food Delivery" id="dtJ-uI-Vkl">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="5K2-Gt-UcX"/>
+                        <barButtonItem key="rightBarButtonItem" image="basket" catalog="system" id="FP7-2J-YaA">
+                            <connections>
+                                <segue destination="vSW-ur-aXc" kind="show" id="2iG-2R-k7c"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="categoryCollectionView" destination="bG3-NR-t68" id="XVE-Pu-Dqf"/>
                         <outlet property="restaurantsCollectionView" destination="0oO-ap-QhF" id="5n2-Bd-0h7"/>
@@ -200,6 +207,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyI-kN-EZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1700.0000000000002" y="97.767857142857139"/>
+        </scene>
+        <!--List Orders View Controller-->
+        <scene sceneID="KZh-I0-Xfg">
+            <objects>
+                <viewController storyboardIdentifier="ListOrdersViewController" id="vSW-ur-aXc" customClass="ListOrdersViewController" customModule="FoodsOnline" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2xC-j6-fJc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Whh-1O-RwZ">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vSW-ur-aXc" id="bkA-6M-5Dh"/>
+                                    <outlet property="delegate" destination="vSW-ur-aXc" id="M27-0W-KQf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gpT-fB-Mig"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Whh-1O-RwZ" firstAttribute="bottom" secondItem="gpT-fB-Mig" secondAttribute="bottom" id="BVC-VJ-AqP"/>
+                            <constraint firstItem="Whh-1O-RwZ" firstAttribute="leading" secondItem="gpT-fB-Mig" secondAttribute="leading" id="CP6-Pi-5dB"/>
+                            <constraint firstItem="Whh-1O-RwZ" firstAttribute="trailing" secondItem="gpT-fB-Mig" secondAttribute="trailing" id="cwY-gQ-SZ0"/>
+                            <constraint firstItem="Whh-1O-RwZ" firstAttribute="top" secondItem="gpT-fB-Mig" secondAttribute="top" id="gs0-4X-FZW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9nE-cZ-PRo"/>
+                    <connections>
+                        <outlet property="tableView" destination="Whh-1O-RwZ" id="SaW-FS-P5q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9OB-8p-ghm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700.0000000000002" y="799.55357142857144"/>
         </scene>
         <!--Dish Detail View Controller-->
         <scene sceneID="dld-ZW-Zzg">
@@ -248,7 +290,7 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bM4-Bb-hSR">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Təfərrüatlar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bM4-Bb-hSR">
                                         <rect key="frame" x="0.0" y="96" width="382" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="9tU-AZ-ZnL"/>
@@ -264,7 +306,7 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Sifarişi təsdiqlə"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Səbətə əlavə et"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
@@ -485,6 +527,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="basket" catalog="system" width="128" height="108"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -500,11 +543,11 @@
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
