@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class RestaurantCollectionViewCell: UICollectionViewCell {
     
     static let identifier = String(describing: RestaurantCollectionViewCell.self)

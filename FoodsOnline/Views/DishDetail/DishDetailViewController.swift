@@ -8,7 +8,7 @@
 import UIKit
 
 
-class DishDetailViewController: UICollectionViewController {
+class DishDetailViewController: UIViewController {
     
     
     @IBOutlet weak var dishImageView: UIImageView!

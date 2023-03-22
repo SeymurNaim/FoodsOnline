@@ -246,7 +246,7 @@
         <!--Dish Detail View Controller-->
         <scene sceneID="dld-ZW-Zzg">
             <objects>
-                <viewController storyboardIdentifier="DishDetailViewController" id="ImR-33-nfj" customClass="DishDetailViewController" customModule="FoodsOnline" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DishDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ImR-33-nfj" customClass="DishDetailViewController" customModule="FoodsOnline" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pHE-Pz-xQU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

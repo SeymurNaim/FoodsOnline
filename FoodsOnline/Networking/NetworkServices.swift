@@ -11,8 +11,8 @@ import Foundation
 struct NetworkService {
     
     func createRequest(route: Route,
-                               method: Method,
-                               parameters: [String: Any]? = nil) -> URLRequest? {
+                       method: Method,
+                       parameters: [String: Any]? = nil) -> URLRequest? {
         let urlString = Route.baseUrl + route.description
         guard let url = urlString.asUrl else { return nil }
         var urlRequest = URLRequest(url: url)

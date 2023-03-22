@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DishPortraitCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLbl: UILabel!
