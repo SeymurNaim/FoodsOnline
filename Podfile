@@ -7,4 +7,6 @@ target 'FoodsOnline' do
 
   # Pods for FoodsOnline
   pod 'Kingfisher', '~> 7.0'
+  pod "ProgressHUD"
+  pod "IQKeyboardManagerSwift"
 end

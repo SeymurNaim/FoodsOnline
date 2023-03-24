@@ -8,14 +8,15 @@
 import Foundation
 
 
-struct DishCategory {
+struct DishCategory: Decodable {
     let id:    String
     let name:  String
     let image: String
+//    let dishes: [Dish]
 }
 
 
-struct Restaurants {
+struct Restaurants: Decodable {
     let id: String
     let name: String
     let image: String

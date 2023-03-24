@@ -1,0 +1,209 @@
+
+
+
+[
+    "categories": [
+        "Sulu Yeməklər"
+        "Qazan Yeməkləri"
+        "Kabablar"
+        "Tava Yeməkləri"
+        "Salatlar"
+        "Fast Foods"
+    ],
+    
+    "dishes": [
+    {
+        "name": "Toyuq Supu"
+        "desciption": "Toyuq, Kartof, Düyü, Göyərti"
+        "image": ""
+        "calories": "150"
+        "category": "Sulu Yeməklər"
+    },
+    {
+        "name": "Mərci Supu"
+        "desciption": "Mərci, Soğan, Yerkökü, Tomat pastası"
+        "image": ""
+        "calories": "120"
+        "category": "Sulu Yeməklər"
+    },
+    {
+        "name": "Lobya Supu"
+        "desciption": "Lobya, Soğan, Kartof"
+        "image": ""
+        "calories": "130"
+        "category": "Sulu Yeməklər"
+    },
+    {
+        "name": "Əriştə"
+        "desciption": "Lobya, Soğan, Yumurta, Nanə, Xəmir"
+        "image": ""
+        "calories": "110"
+        "category": "Sulu Yeməklər"
+    },
+    {
+        "name": "Buğlama"
+        "desciption": "Dana əti, Pomidor, Soğan, Şirin bibər"
+        "image": ""
+        "calories": "190"
+        "category": "Qazan Yeməkləri"
+    },
+    {
+        "name": "Qazan Kababı"
+        "desciption": "Quzu əti, Acı istiot, Soğan, Zirə, Quyruq, Şüyüd"
+        "image": ""
+        "calories": "230"
+        "category": "Qazan Yeməkləri"
+    },
+    {
+        "name": "Şah Plov"
+        "desciption": "Quzu əti, Düyü, Kişmiş, Qaysı, Albuxara, Soğan"
+        "image": ""
+        "calories": "220"
+        "category": "Qazan Yeməkləri"
+    },
+    {
+        "name": "Toyuq Örüştəsi"
+        "desciption": "Toyuq, Soğan, Şabalıd, Zirinc"
+        "image": ""
+        "calories": "180"
+        "category": "Qazan Yeməkləri"
+    },
+    {
+        "name": "Şəki Pitisi"
+        "desciption": "Quzu əti, Noxud, Quyruq, Sumaq"
+        "image": ""
+        "calories": "250"
+        "category": "Qazan Yeməkləri"
+    },
+    {
+        "name": "Lülə Kabab"
+        "desciption": "Quzu əti, Soğan, Yumurta"
+        "image": ""
+        "calories": "170"
+        "category": "Kabablar"
+    },
+    {
+        "name": "Tikə Kabab"
+        "desciption": "Quzu əti, Soğan"
+        "image": ""
+        "calories": "160"
+        "category": "Kabablar"
+    },
+    {
+        "name": "Antrikot Kababı"
+        "desciption": "Quzu əti, Soğan"
+        "image": ""
+        "calories": "150"
+        "category": "Kabablar"
+    },
+    {
+        "name": "Dana Basdırması"
+        "desciption": "Quzu əti, Soğan, Duz, Kəklikotu"
+        "image": ""
+        "calories": "170"
+        "category": "Kabablar"
+    },
+    {
+        "name": "Toyuq Tabaka"
+        "desciption": "Toyuq, Kartof"
+        "image": ""
+        "calories": "200"
+        "category": "Tava Yeməkləri"
+    },
+    {
+        "name": "Special Qovurma"
+        "desciption": "Dana əti, Şabalıd, Soğan, Nar, Şüyüd"
+        "image": ""
+        "calories": "200"
+        "category": "Tava Yeməkləri"
+    },
+    {
+        "name": "Vişnəli Can Əti"
+        "desciption": "Can əti, Nar, Vişnə, Soğan"
+        "image": ""
+        "calories": "170"
+        "category": "Tava Yeməkləri"
+    },
+    {
+        "name": "Kefli Beçə"
+        "desciption": "Toyuq, Soğan, Şərab, Üzüm"
+        "image": ""
+        "calories": "165"
+        "category": "Tava Yeməkləri"
+    },
+    {
+        "name": "Paytaxt Salatı"
+        "desciption": "Toyuq əti, Yaşıl noxud, Mayonez, Kartof, Xiyar"
+        "image": ""
+        "calories": "120"
+        "category": "Salatlar"
+    },
+    {
+        "name": "Çoban Salatı"
+        "desciption": "Xiyar, Pomidor, Soğan, Zeytun yağı"
+        "image": ""
+        "calories": "90"
+        "category": "Salatlar"
+    },
+    {
+        "name": "Şuba Salatı"
+        "desciption": "Kartof, Yumurta, Yerkökü, Soğan"
+        "image": ""
+        "calories": "110"
+        "category": "Salatlar"
+    },
+    {
+        "name": "Sezar Salatı"
+        "desciption": "Toyuq əti, Pomidor, Parmezan Pendiri, Kahı, Baton çörəyi, Zeytun yağı"
+        "image": ""
+        "calories": "130"
+        "category": "Salatlar"
+    },
+    {
+        "name": "Toyuq Burger"
+        "desciption": "Toyuq əti, Holland pendiri, Xüsusi burger çörəyi"
+        "image": ""
+        "calories": "110"
+        "category": "Fast Foods"
+    },
+    {
+        "name": "Dana Burger"
+        "desciption": "Dana əti, Holland pendiri, Xüsusi burger çörəyi"
+        "image": ""
+        "calories": "120"
+        "category": "Fast Foods"
+    },
+    {
+        "name": "Naggets"
+        "desciption": "Toyuq əti, Xüsusi souslar"
+        "image": ""
+        "calories": "100"
+        "category": "Fast Foods"
+    },
+    {
+        "name": "Kartof Free"
+        "desciption": "Kartof, Ədviyyatlar"
+        "image": ""
+        "calories": "70"
+        "category": "Fast Foods"
+    },
+    {
+        "name": "Santo Mare"
+        "desciption": "Krevetka, Ədviyyatlar, Souslar"
+        "image": ""
+        "calories": "130"
+        "category": "Fast Foods"
+    }
+    
+    
+    
+    
+    
+    
+    
+    ]
+    
+    
+    
+    
+]

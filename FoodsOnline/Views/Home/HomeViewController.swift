@@ -33,26 +33,28 @@ class HomeViewController: UIViewController {
     ]
     
     var specials: [Dish] = [
-        .init(id: "id1", name: "Kefli cücə", description: "Kalorinizi qoruyun", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3mblpOEPBzeYrx-bFMfLnNuoA2zudF3qLtQ&usqp=CAU", calories: 34.3834),
+        .init(id: "id1", name: "Kefli beçə", description: "Kalorinizi qoruyun", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3mblpOEPBzeYrx-bFMfLnNuoA2zudF3qLtQ&usqp=CAU", calories: 34.3834),
         .init(id: "id2", name: "Şah plov", description: "Kalorinizi qoruyun", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCYty_xo-8USyc8cLXVnHU5ucjPkI9bv_YSw&usqp=CAU", calories: 45.1234),
         .init(id: "id3", name: "Special Qovurma", description: "Kalorinizi qoruyun", image: "https://mado.az/uploads/product/89/et-nar-qovurma_1577038290.jpg", calories: 200.5337),
         .init(id: "id4", name: "Santo Mare", description: "Kalorinizi qoruyun", image: "https://www.santomare.com/wp-content/uploads/2018/03/santomare-restaurant2.jpg", calories: 90.9478),
         .init(id: "id5", name: "Şəki Pitisi", description: "Kalorinizi qoruyun", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgkZL6dG0_3I8CyTJBHBOON_HuO7SWxqP16k9UjR89SQ9YavElFvwKl0qSQGhPJCM1Bo&usqp=CAU", calories: 145.9482),
-        .init(id: "id6", name: "İmişli Qovurması", description: "Kalorinizi qoruyun", image: "https://azerbaijan.az/uploads/news-files/melumatlar/medeniyyet/Kulinariya/НоваяПапка/gbsisdaLe8U.jpg", calories: 78.0345)
    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let service = NetworkService()
-//        let request = service.createRequest(route: .temp, method: .post, parameters: ["firsName": "Ilqar", "lastName": "Naim"])
-//        print("The URL is: \(request?.url)")
-//        print("The body: \(request?.httpBody)")
-        
         specialCollectionView.dataSource = self
         specialCollectionView.delegate = self
         
         registerCells()
+//        NetworkService.shared.fetchAllCategories { [weak self] (result) in
+//            switch result {
+//            case .success(let allDishes):
+//                print("it was successful")
+//            case .failure(let error):
+//                print("the error is: \(error.localizedDescription)")
+//            }
+//        }
         
     }
     
@@ -115,6 +117,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             navigationController?.pushViewController(controller, animated: true)
         }
     }
-
-
+    
 }
+
+
+
